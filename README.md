@@ -1,2 +1,13 @@
-# alu-logo-asset-tokenization
-A Hardhat-based Solidity project that registers the ALU logo as an ERC-721 NFT, verifies its integrity using SHA-256 hashing, and tokenizes ownership shares with an ERC-20 contract.
+# Sample Hardhat Project
+
+This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+
+Try running some of the following tasks:
+
+```shell
+npx hardhat help
+npx hardhat test
+REPORT_GAS=true npx hardhat test
+npx hardhat node
+npx hardhat ignition deploy ./ignition/modules/Lock.js
+```
