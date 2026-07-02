@@ -19,7 +19,7 @@ async function main() {
   const assetName = "ALU Official Logo";
   const fileType = "png";
   
-  // The exact hex hash generated from the alu.png file
+  // The exact hex hash generated from the alu-logo.png file
   const logoContentHash = "0xac588b92aaed6542a2c537fe0e4ad264095811768e017f74228535d8ad9ecc9b";
 
   console.log(`Registering asset: "${assetName}" with hash: ${logoContentHash}...`);
