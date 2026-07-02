@@ -33,6 +33,17 @@ async function main() {
 
   console.log(`✔ Success! ALU Logo successfully registered on-chain.`);
   console.log(`Generated Token ID: ${tokenId.toString()}`);
+
+  // 3. Deploy ALULogoToken
+  console.log("Deploying ALULogoToken...");
+  const ALULogoToken = await ethers.getContractFactory("ALULogoToken");
+  
+  // Pass the deployer's address to the constructor as the logoOwner
+  const logoToken = await ALULogoToken.deploy(deployer.address);
+  await logoToken.deployed(); // or .waitForDeployment() if using ethers v6 here as well
+
+  console.log(`ALULogoToken deployed to: ${logoToken.address}`);
+  console.log(`1,000,000 ALUT minted to owner: ${deployer.address}`);
   console.log("==========================================================");
 }
 
