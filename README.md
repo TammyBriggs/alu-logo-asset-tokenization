@@ -73,4 +73,3 @@ During the development of this project, I encountered and resolved several techn
 **5. Nested Git Directory Conflicts**
 - *Problem:* My Hardhat environment was originally initialized in a sub-folder inside my main Git repository, preventing proper version control tracking and deployment.
 - *Resolution:* I used terminal commands to flatten the directory structure, moving all configuration files to the root level of the repository, allowing GitHub to track the project correctly.
-```
